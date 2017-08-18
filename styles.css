@@ -131,6 +131,12 @@
     display: none;
   }
 
+  .project {
+    display: none;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+  }
+
   @media (max-width: 600px) {
     .text {
       margin-left: 2vw;
@@ -153,6 +159,7 @@
     }
     .footer {
       width: 80%;
+      min-height: 80px !important;
     }
     .theatrical {
       display: none;
@@ -165,17 +172,18 @@
     .space {
       width: 10px;
     }
+    .project {
+      display: block;
+    }
   }
 
   @media (min-width: 500px) and (max-height: 500px) {
     .container {
       top: 20px;
     }
-
     .text {
       margin-left: 0;
     }
-
     .wrapper {
       position: relative;
       display: flex;
@@ -186,7 +194,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 50px;
+      min-height: 60px;
+      margin-top: -15px;
     }
     .footer>img {
       margin-left: 2vw;
@@ -195,5 +204,6 @@
     }
     .icons {
       min-height: 40px;
+      margin-bottom: 10px;
     }
   }
