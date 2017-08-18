@@ -1,190 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300, 500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://use.fontawesome.com/5bd1c5c03e.js"></script>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-        .background-image {
-            flex:1;
-            max-width: 800px;
-            background: url(Explosive800.png) no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-
-        .text {
-            margin-left: 2vw;
-            margin-top: -12vh;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            color: white;
-        }
-
-
-        .together {
-            font-size: 5vmin;
-            line-height: 4vmin;
-        }
-
-        .unshackle {
-            font-size: 6vmin;
-            line-height: 5.5vmin;
-        }
-
-        .the {
-            font-size: 12vmin;
-            font-weight: 500;
-            line-height: 10vmin;
-        }
-
-        .startup {
-            font-size: 4vmin;
-            line-height: 3.5vmin;
-        }
-
-        .date {
-            font-size: 7vmin;
-            line-height: 6vmin;
-        }
-
-        .wrapper {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            max-height: calc(100% - 130px);
-        }
-
-        .wrapper > img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-        }
-
-        .footer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 70px;
-        }
-
-        .footer > img {
-            margin-left: 2vw;
-            height: 35px;
-            margin-bottom: 10px;
-        }
-
-        .theatrical {
-            font-size: 16px;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 60px;
-            width: 80%;
-            max-width: 700px;
-        }
-
-        .icon {
-            padding: 6px;
-            border: 1px solid rgba(0, 0, 0, 0.61);
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @media (max-width: 600px) {
-            .text {
-                margin-left: 2vw;
-                margin-top: -6vh;
-            }
-            .together {
-                line-height: 5vmin;
-            }
-
-            .unshackle {
-                line-height: 6vmin;
-            }
-
-            .the {
-                line-height: 12vmin;
-            }
-
-            .startup {
-                line-height: 4vmin;
-            }
-
-            .date {
-                line-height: 7vmin;
-            }
-        }
-
-    </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="wrapper">
-        <img src="Explosive800.png"/>
-        <div class="text">
-            <div class="together">TOGETHER WE</div>
-            <div class="unshackle">UNSHACKLE</div>
-            <div class="the">THE</div>
-            <div class="startup">STARTUP NATION</div>
-            <div class="date">2.18.2018</div>
+    <div class="container">
+        <div class="wrapper">
+            <img src="Explosive800.png" />
+            <div class="text">
+                <div class="together"><span>TOGETHER</span><span>WE</span></div>
+                <div class="unshackle">UNSHACKLE</div>
+                <div class="the"><span>T</span><span>H</span><span>E</span></div>
+                <div class="startup"><span>STARTUP</span><span>NATION</span></div>
+                <div class="date"><span>2.</span><span>18.</span><span>2018</span></div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="logo.png" />
+            <div class="theatrical-mobile">
+                <div>T</div>
+                <div>h</div>
+                <div>e</div>
+                <div>t</div>
+                <div>r</div>
+                <div>i</div>
+                <div>c</div>
+                <div>a</div>
+                <div>l</div>
+                <div class="space"></div>
+                <div>C</div>
+                <div>l</div>
+                <div>i</div>
+                <div>m</div>
+                <div>a</div>
+                <div>c</div>
+                <div>t</div>
+                <div>i</div>
+                <div>c</div>
+                <div class="space"></div>
+                <div>I</div>
+                <div>O</div>
+                <div>C</div>
+                <div class="space"></div>
+                <div>U</div>
+                <div>n</div>
+                <div>d</div>
+                <div>e</div>
+                <div>r</div>
+                <div>w</div>
+                <div>r</div>
+                <div>i</div>
+                <div>t</div>
+                <div>i</div>
+                <div>n</div>
+                <div>g</div>
+            </div>
+            <div class="theatrical">Thetrical Climactic IOC Underwriting</div>
+                
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <img src="logo.png"/>
-        <div class="theatrical">Theatrical Climactic IOC Underwriting</div>
-    </div>
-    <div class="icons">
-        <div class="icon">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
-        <div class="icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-        </div>
-        <div class="icon">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-        </div>
-        <div class="icon">
-            <i class="fa fa-rss" aria-hidden="true"></i>
-        </div>
-        <div class="icon">
-            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
 
 </body>
+
 </html>
