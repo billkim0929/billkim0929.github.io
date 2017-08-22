@@ -25,7 +25,7 @@
 
   .text {
     margin-left: 1vw;
-    margin-top: -11vh;
+    margin-top: -8vh;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -64,9 +64,11 @@
   }
 
   .startup {
-    display: flex;
+     display: flex; 
     justify-content: space-between;
-    font-size: 4.3vmin;
+    font-size: 8vmin;
+    line-height: 8vmin;
+    text-align: center;
   }
 
   .date {
@@ -163,7 +165,8 @@
       line-height: 12vmin;
     }
     .startup {
-      line-height: 4vmin;
+
+      /* line-height: 4vmin; */
     }
     .date {
       line-height: 7vmin;
@@ -194,6 +197,10 @@
     }
     .text {
       margin-left: 0;
+    }
+    .startup {
+       font-size: 6.5vmin;
+        line-height: 6vmin;
     }
     .wrapper {
       position: relative;
