@@ -189,7 +189,15 @@ i {
 
 @media (max-width: 600px) {
   .wrapper {
-    max-height: calc(100% - 300px);
+    max-height: calc(100% - 260px);
+  }
+
+  .register-wrapper {
+    font-size: 13px;
+  }
+
+  .form-control {
+    font-size: 13px !important;
   }
 
   .register-wrapper {
