@@ -4,100 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <title>SMASH.FINANCIAL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400, 500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script src="popper.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/5bd1c5c03e.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="wrapper">
-            <img src="Explosive800.png" />
-            <div class="text">
-                <div class="together"><span>TOGETHER</span><span>WE</span></div>
-                <div class="unshackle">UNSHACKLE</div>
-                <div class="the"><span>T</span><span>H</span><span>E</span></div>
-                <div class="startup">
-                    <div>S</div>
-                    <div>T</div>
-                    <div>A</div>
-                    <div>R</div>
-                    <div>T</div>
-                    <div>U</div>
-                    <div>P</div>
-                </div>
-                <div class="startup">
-                    <div>N</div>
-                    <div>A</div>
-                    <div>T</div>
-                    <div>I</div>
-                    <div>O</div>
-                    <div>N</div>
-                </div>
-                <div class="date"><span>6</span><span>.</span><span>16</span><span>.</span><span>2018</span></div>
-            </div>
-        </div>
-        <div class="footer">
-            <img src="logo.png" />
-            <a class="join" target="_blank" href="form.html">
-                <span>JOIN THE MOVEMENT</span>
-                <div id="click-indicator">
-                    <div class="outer-ring"></div>
-                    <div class="inner-ring"></div>
-                    <img class="hand" src="hand-cursor.png" width="24px" height="24px"/>
-                </div>
-            </a>
-            <div class="theatrical-mobile">
-                <div>I</div>
-                <div>N</div>
-
-                <div class="space"></div>
-                <div>C</div>
+<body onload="init()">
+<div class="container">
+    <div class="wrapper">
+        <img src="Explosive800.png"/>
+        <div class="text">
+            <div class="together"><span>TOGETHER</span><span>WE</span></div>
+            <div class="unshackle">UNSHACKLE</div>
+            <div class="the"><span>T</span><span>H</span><span>E</span></div>
+            <div class="startup">
+                <div>S</div>
+                <div>T</div>
+                <div>A</div>
                 <div>R</div>
-                <div>Y</div>
+                <div>T</div>
+                <div>U</div>
                 <div>P</div>
-                <div>T</div>
-                <div>O</div>
-                <div>C</div>
-                <div>E</div>
-                <div>L</div>
-                <div>E</div>
-                <div>R</div>
+            </div>
+            <div class="startup">
+                <div>N</div>
                 <div>A</div>
                 <div>T</div>
+                <div>I</div>
                 <div>O</div>
-                <div>R</div>
-                <div class="space"></div>
-                <div>E</div>
-                <div>R</div>
-                <div>A</div>
+                <div>N</div>
             </div>
-            <div class="theatrical">IN CRYPTOCELERATOR ERA</div>
-        </div>
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/intent/tweet?text=Hello+World&via=twitterdev" target="_blank">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-            </div>
-            <div class="icon">
-                <i class="fa fa-rss" aria-hidden="true"></i>
-            </div>
-            <div class="icon">
-                <i class="fa fa-reddit-alien" aria-hidden="true"></i>
-            </div>
+            <div class="date"><span>6</span><span>.</span><span>16</span><span>.</span><span>2018</span></div>
         </div>
     </div>
+    <div class="footer">
+        <img src="logo.png"/>
+        <div class="register-wrapper">
+            <div for="exampleFormControlSelect1" class="join-us" style="margin-right: 15px;">Join Our Movement as</div>
+            <select class="form-control as" id="as">
+                <option>Entrepreneur</option>
+                <option>Researcher</option>
+                <option>Advisor</option>
+                <option>Blogger/Journalist</option>
+                <option>Investor</option>
+            </select>
+            <input type="email" class="form-control email" id="email" placeholder="Your email">
+            <div class="register" id="register">Register</div>
+        </div>
+        <div class="theatrical-mobile">
+            <div>I</div>
+            <div>N</div>
+
+            <div class="space"></div>
+            <div>C</div>
+            <div>R</div>
+            <div>Y</div>
+            <div>P</div>
+            <div>T</div>
+            <div>O</div>
+            <div>C</div>
+            <div>E</div>
+            <div>L</div>
+            <div>E</div>
+            <div>R</div>
+            <div>A</div>
+            <div>T</div>
+            <div>O</div>
+            <div>R</div>
+            <div class="space"></div>
+            <div>E</div>
+            <div>R</div>
+            <div>A</div>
+        </div>
+        <div class="theatrical">IN CRYPTOCELERATOR ERA</div>
+    </div>
+    <div class="icons">
+        <div class="icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+            <a href="https://twitter.com/intent/tweet?text=Hello+World&via=twitterdev" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
 
 </body>
+<script>
+  function init() {
+    $("#register").on("click", submit);
+    $("#email").on("keyup", function() {
+      $("#email").removeClass("is-invalid");
+    });
+  }
 
+
+  function submit() {
+    var as = $("#as").val();
+    var email = $("#email").val();
+    if (email.trim() === "" || !validateEmail(email)) {
+      $("#email").addClass("is-invalid");
+    } else {
+      $.ajax({
+        method: "POST",
+        url: "https://docs.google.com/forms/d/1EylzJ_ZlarO99TjwYMARh_ygQ_1Ockv-vYOkv3Tw33w/formResponse?emailAddress=" + email + "&entry.431726994=" + as + "&submit=Submit"
+      })
+        .fail(function( msg ) {
+          // request will fail due to Access-Control-Allow-Origin, but new entry will be added to google form
+          $("#email").val("");
+        });
+    }
+  }
+
+  function validateEmail(email) {
+    var pattern = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+    return $.trim(email).match(pattern) ? true : false;
+  }
+</script>
 </html>
