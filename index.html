@@ -106,6 +106,22 @@
     </div>
 </div>
 
+<div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">SMASH.FINANCIAL</h5>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for joining us today!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 <script>
   function init() {
@@ -129,6 +145,7 @@
         .fail(function( msg ) {
           // request will fail due to Access-Control-Allow-Origin, but new entry will be added to google form
           $("#email").val("");
+          $('#thankyou').modal();
         });
     }
   }
