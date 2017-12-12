@@ -191,7 +191,7 @@ i {
 
 @media (max-width: 600px) {
   .wrapper {
-    max-height: calc(100% - 260px);
+    max-height: calc(100% - 160px);
   }
 
   .form-control {
@@ -295,7 +295,7 @@ i {
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: calc(100% - 120px);
+    max-height: calc(100% - 80px);
   }
 
   .footer {
