@@ -104,6 +104,7 @@ body {
 .theatrical {
   font-size: 16px;
   letter-spacing: 4px;
+  margin-bottom: 10px;
 }
 
 .icons {
@@ -140,6 +141,7 @@ a:hover {
 
 .theatrical-mobile {
   display: none;
+  margin-bottom: 5px;
 }
 
 .project {
@@ -153,7 +155,7 @@ a:hover {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+
 }
 
 .register {
@@ -192,10 +194,6 @@ i {
     max-height: calc(100% - 260px);
   }
 
-  .register-wrapper {
-    font-size: 13px;
-  }
-
   .form-control {
     font-size: 13px !important;
   }
@@ -205,8 +203,8 @@ i {
     width: 100%;
     align-items: inherit;
     justify-content: inherit;
-    margin-bottom: 10px;
     flex-wrap: wrap;
+    font-size: 13px;
   }
 
   .join-us {
@@ -220,6 +218,7 @@ i {
     width: 100% !important;
     margin-right: 0;
     margin-bottom: 5px;
+    height: 38px;
   }
 
   .register {
@@ -260,6 +259,7 @@ i {
 
   .theatrical {
     display: none;
+
   }
 
   .theatrical-mobile {
@@ -295,7 +295,7 @@ i {
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: calc(100% - 80px);
+    max-height: calc(100% - 120px);
   }
 
   .footer {
@@ -332,6 +332,13 @@ i {
   .email {
     width: 150px  !important;
     margin-right: 15px;
+    min-height: 38px;
+  }
+
+  .as, .email, .register {
+    max-height: 33px !important;
+    min-height: 33px !important;
+    margin-bottom: 8px;
   }
 
   .icons {
@@ -342,6 +349,7 @@ i {
   .theatrical {
     font-size: 13px;
     letter-spacing: 3px;
+    margin-bottom: 5px;
   }
 
   .p1 {

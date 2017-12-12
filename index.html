@@ -46,18 +46,6 @@
     </div>
     <div class="footer">
         <img src="logo.png"/>
-        <div class="register-wrapper">
-            <div for="exampleFormControlSelect1" class="join-us" style="margin-right: 15px;">Join Our Movement as</div>
-            <select class="form-control as" id="as">
-                <option>Entrepreneur</option>
-                <option>Researcher</option>
-                <option>Advisor</option>
-                <option>Blogger/Journalist</option>
-                <option>Investor</option>
-            </select>
-            <input type="email" class="form-control email" id="email" placeholder="Your email">
-            <div class="register" id="register">Register</div>
-        </div>
         <div class="theatrical-mobile">
             <div>I</div>
             <div>N</div>
@@ -84,6 +72,18 @@
             <div>A</div>
         </div>
         <div class="theatrical">IN CRYPTOCELERATOR ERA</div>
+        <div class="register-wrapper">
+            <input type="email" class="form-control email" id="email" placeholder="Your email">
+            <select class="form-control as" id="as">
+                <option value="">You are a ..</option>
+                <option>Entrepreneur</option>
+                <option>Researcher</option>
+                <option>Advisor</option>
+                <option>Blogger/Journalist</option>
+                <option>Investor</option>
+            </select>
+            <div class="register" id="register">Join Our Movement</div>
+        </div>
     </div>
     <div class="icons">
         <div class="icon">
@@ -106,7 +106,8 @@
     </div>
 </div>
 
-<div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -126,8 +127,12 @@
 <script>
   function init() {
     $("#register").on("click", submit);
-    $("#email").on("keyup", function() {
+    $("#email").on("keyup", function () {
       $("#email").removeClass("is-invalid");
+    });
+
+    $("#as").on("change", function () {
+      $("#as").removeClass("is-invalid");
     });
   }
 
@@ -135,14 +140,24 @@
   function submit() {
     var as = $("#as").val();
     var email = $("#email").val();
+    var valid = true;
+
+    if (as.trim() === "") {
+      $("#as").addClass("is-invalid");
+      valid = false;
+    }
+
     if (email.trim() === "" || !validateEmail(email)) {
       $("#email").addClass("is-invalid");
-    } else {
+      valid = false;
+    }
+
+    if (valid) {
       $.ajax({
         method: "POST",
         url: "https://docs.google.com/forms/d/1EylzJ_ZlarO99TjwYMARh_ygQ_1Ockv-vYOkv3Tw33w/formResponse?emailAddress=" + email + "&entry.431726994=" + as + "&submit=Submit"
       })
-        .fail(function( msg ) {
+        .fail(function (msg) {
           // request will fail due to Access-Control-Allow-Origin, but new entry will be added to google form
           $("#email").val("");
           $('#thankyou').modal();
